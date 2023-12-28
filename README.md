@@ -1,2 +1,2 @@
 #Personal Portfolio Website
--- Website displaying methods of contact, skills acquired, extracurricular activites currently participated in, and more.
+-- Website displaying methods of contact, skills acquired, extracurricular activities currently participated in, and more.
