@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat, sans-serif;
+}
+body{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(images/coolbackground.jpeg);
+    margin: 0px;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    margin: 0px;
+    border: 1px solid black;
+    background-color: hsla(162, 54%, 69%, 0.255);
+    box-shadow: 2px 5px 50px black;
+}
+#nametag{
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 30px;
+    cursor: pointer;
+}
+h1 .homepage{
+    text-decoration: none;
+    color: black;
+}
+.navbar{
+    list-style-type: none;
+}
+.navbar li{
+    display: inline-block;
+    padding: 0px 40px;
+    font-size: .9em;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+}
+.navbar li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: 900;
+}
+.navbar li:hover a{
+    background-color: hsl(82, 39%, 43%);
+    border-radius: 10px;
+    padding: 20px 15px;
+    color: white;
+}
+a .contactButton{
+    margin-left: 30px;
+    padding: 9px 25px;
+    color: black;
+    background-color: hsla(162, 54%, 69%, 0.255);
+    border-radius: 50px;
+    border: 2px solid black;
+    cursor: pointer;
+    text-decoration: none;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+}
+a:hover .contactButton{
+    background-color: hsl(82, 39%, 53%);
+    color: white;
+    transform: translateY(-.3rem);
+}
+a:active .contactButton{
+    transform: translateY(.3rem);
+}
+.NSBE{
+    display:block;
+    border: .5px solid black;
+    background-color: hsla(162, 54%, 69%, 0.714);
+    box-shadow: 5px 5px 10px white;
+    border-radius: 50px;
+    width: 150vh;
+    height:30vh;
+    margin-left: 3%;
+    margin-top: 3%;
+    position: absolute;
+}
+.NSBE #content{
+    display: flex;
+    text-align: center;
+}
+.NSBE #content img{
+    display: inline-block;
+    width: 30%;
+    height: 30%;
+    padding: 5% 3%;
+}
+.NSBE #content div{
+    display: inline-block;
+    padding: 4% 3%;
+    color: white;
+
+}
+.NSBE #content div h1{
+    font-size: 20px;
+    border: 1px solid black;
+    background-color: black;
+    box-shadow: 5px 5px 50px white;
+    border-radius: 50px;
+    width: 75vh;
+    margin-left: 12.5%;
+}
+.NSBE #content div h2{
+    font-size: 8px;
+    color: black;
+    margin-top: .5%;
+}
+.NSBE #content div h1 a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.EXE{
+    display: block;
+    border: 1px solid black;
+    background-color: hsla(162, 54%, 69%, 0.714);
+    box-shadow: 5px 5px 10px white;
+    border-radius: 50px;
+    width: 150vh;
+    height:30vh;
+    margin-left: 25%;
+    margin-top: 3%;
+    position: absolute;
+}
+.EXE #content2{
+    display: flex;
+    text-align: center;
+}
+.EXE #content2 img{
+    display: inline-block;
+    width: 15%;
+    height: 15%;
+    padding: 5% 3%;
+}
+.EXE #content2 div{
+    display: inline-block;
+    padding: 4% 3%;
+    color: white;
+}
+.EXE #content2 div h1{
+    font-size: 20px;
+    border: .5px solid black;
+    background-color: black;
+    box-shadow: 5px 5px 50px white;
+    border-radius: 50px;
+    width: 75vh;
+    margin-left: 17%;
+}
+.EXE #content2 div h1 a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+footer{
+    display: block;
+    text-align: center;
+    border: .5px solid black;
+    position: absolute;
+    width: 100%;
+    background-color: hsla(162, 54%, 69%, 0.255);
+    color: black;
+    height: 10%;
+    bottom: 0px;
+}
+footer div{
+    display: flex;
+    justify-content: flex-end;
+}
+footer div ul{
+    display: flex;
+    list-style-type: none;
+    padding: 25px 2.5%;
+}
+footer div .linkedin{
+    width: 50px;
+    height: 50px;
+    color: black;
+    padding: 2% 5%;
+    text-decoration: none;
+    cursor: pointer;
+}
+footer div .linkedin:hover{
+    transform: translateY(-.3rem);
+    color: white;
+}
+footer div .linkedin:active{
+    transform: translateY(.3rem);
+    color: lightblue;
+}
+
+footer div ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 25px;
+    margin-left: auto;
+    color: black;
+}
+footer div ul li:hover a{
+    transform: translateY(-.3rem);
+    color: white;
+}
+footer div ul li:active a{
+    transform: translateY(.3rem);
+    color: lightblue;
+}
+
+@keyframes slideLeft{
+    from{transform: translateX(300%)}
+}

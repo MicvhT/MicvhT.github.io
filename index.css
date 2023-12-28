@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat, sans-serif;
+}
+body{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(images/coolbackground.jpeg);
+    margin: 0px;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    margin: 0px;
+    border: 1px solid black;
+    background-color: hsla(162, 54%, 69%, 0.255);
+    box-shadow: 2px 5px 50px black;
+}
+h1{
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 30px;
+    cursor: pointer;
+    animation-name: slideLeft;
+    animation-duration: 1.5s;
+}
+h1 .homepage{
+    text-decoration: none;
+    color: black;
+}
+.linkedin{
+    color: black;
+    display: inline-block;
+    margin-right: 10%;
+}
+.linkedin:hover{
+    color: white;
+    transform: translateY(-.3rem);
+}
+.linkedin:active {
+    color: white;
+    transform: translateY(.3rem);
+}
+.navbar{
+    list-style-type: none;
+}
+.navbar li{
+    display: inline-block;
+    padding: 0px 40px;
+    font-size: .9em;
+}
+.navbar li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: 900;
+}
+.navbar li:hover a{
+    background-color: hsl(82, 39%, 43%);
+    border-radius: 10px;
+    padding: 20px 15px;
+    color: white;
+}
+a .contactButton{
+    margin-left: 30px;
+    padding: 9px 25px;
+    color: black;
+    background-color: hsla(162, 54%, 69%, 0.255);
+    border-radius: 50px;
+    border: 2px solid black;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover .contactButton{
+    background-color: hsl(82, 39%, 53%);
+    color: white;
+    transform: translateY(-.3rem);
+}
+a:active .contactButton{
+    transform: translateY(.3rem);
+}
+.information p{
+    display: block;
+}
+.section{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 10%;
+    margin-top: 5%;
+    align-items: center;
+    float: auto;
+    border: none;
+    border-radius: 40px;
+    width: 165vh;
+    height: 70vh;
+    padding: 10% 5%;
+    overflow: hidden;
+    text-align: center;
+    background-image: url(/images/skyline.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 10px 10px 100px 10px rgba(255, 255, 255, 0.988);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    overflow: none;
+}
+.section aside{
+    display: inline-block;
+    text-align: left;
+    color: white;
+    margin-right: auto;
+    margin-left: 0px;
+}
+.section .greeting{
+    font-size: 16px;
+}
+.section .myName .name{
+    color: hsla(162, 54%, 69%, 0.965);
+    font-size: 50px;
+}
+.section h1{
+    font-size: 30px;
+}
+.section a button{
+    padding: 9px 25px;
+    color: black;
+    background-color: hsla(162, 54%, 69%, 0.755);
+    border-radius: 50px;
+    border: 2px solid black;
+    cursor: pointer;
+    text-decoration: none;
+}
+.section a:hover button{
+    background-color: hsla(162, 54%, 69%, 0.955);
+    transform: translateY(-.3rem);
+}
+.section a:active button{
+    background-color: hsla(162, 54%, 69%, 0.955);
+    transform: translateY(.3rem);
+}
+.section .sectionContent .laptopWave{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin-left: 60%;
+    margin-bottom: 10%;
+    margin-left: auto;
+}
+

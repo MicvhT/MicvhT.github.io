@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat, sans-serif;
+}
+body{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(images/coolbackground.jpeg);
+    margin: 0px;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    margin: 0px;
+    border: 1px solid black;
+    background-color: hsla(162, 54%, 69%, 0.255);
+    box-shadow: 2px 5px 50px black;
+}
+#nametag{
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 30px;
+    cursor: pointer;
+}
+h1 .homepage{
+    text-decoration: none;
+    color: black;
+}
+.navbar{
+    list-style-type: none;
+}
+.navbar li{
+    display: inline-block;
+    padding: 0px 40px;
+    font-size: .9em;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+}
+.navbar li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.navbar li:hover a{
+    background-color: hsl(82, 39%, 43%);
+    color: white;
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+a .contactButton{
+    margin-left: 30px;
+    padding: 9px 25px;
+    color: black;
+    background-color: hsla(162, 54%, 69%, 0.255);
+    border-radius: 50px;
+    border: 2px solid black;
+    cursor: pointer;
+    text-decoration: none;
+    animation-name: slideLeft;
+    animation-duration: 1.5s;
+}
+a:hover .contactButton{
+    background-color: hsl(82, 39%, 53%);
+    color: white;
+    transform: translateY(-.3rem);
+}
+a:active .contactButton{
+    transform: translateY(.3rem);
+}
+main{
+    margin-top: 1%;
+    margin-left: 25%;
+    margin-bottom: 5%;
+    animation: none;
+    width: 50%;
+    text-align: center;
+}
+.aboutMeSection{
+    display: block;
+    color: white;
+    padding: 80px 80px;
+}
+.aboutMeSection .logo h1{
+    display: block;
+}
+.aboutMeSection .logo img{
+    width: 200px;
+    height: 200px;
+    border-radius: 70px;
+    margin-top: 50px;
+}
+.aboutMeSection .aboutMe h1{
+    display: block;
+}
+.aboutMeSection .skillicons{
+    display: flex;
+    justify-content: space-around;
+}
+.aboutMeSection .skillicons #cplusplus{
+    width: 50px;
+    height: 50px;
+}
+.aboutMeSection .skillicons #htmlLogo{
+    width: 50px;
+    height: 50px;
+}
+.aboutMeSection .skillicons #cssLogo{
+    width: 50px;
+    height: 50px;
+}
+.aboutMeSection .skillicons #jsLogo{
+    width: 50px;
+    height: 50px;
+}
+.aboutMeSection .skillicons #htmlLogo:hover{
+    transform: translateY(-.5rem);
+    animation-duration: 2s;
+    cursor: pointer;
+}
+.aboutMeSection .skillicons #cssLogo:hover{
+    transform: translateY(-.5rem);
+    animation-duration: 2s;
+    cursor: pointer;
+}
+.aboutMeSection .skillicons #cplusplus:hover{
+    transform: translateY(-.5rem);
+    animation-duration: 2s;
+    cursor: pointer;
+}
+.aboutMeSection .skillicons #jsLogo:hover{
+    transform: translateY(-.5rem);
+    animation-duration: 2s;
+    cursor: pointer;
+}
+.aboutMe a button{
+    padding: 9px 25px;
+    color: black;
+    background-color: hsla(162, 54%, 69%, 0.755);
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    text-decoration: none;
+}
+.aboutMe a:hover button{
+    background-color: hsla(162, 54%, 69%, 0.955);
+    transform: translateY(-.3rem);
+    animation-duration: 2s;
+}
+.aboutMe a:active button{
+    background-color: hsla(162, 54%, 69%, 0.955);
+    transform: translateY(.3rem);
+    animation-duration: 2s;
+    border: 3px solid black;
+    box-shadow: 2px 2px 30px white;
+}
+footer{
+    display: block;
+    text-align: center;
+    border: .5px solid black;
+    position: absolute;
+    width: 100%;
+    background-color: hsla(162, 54%, 69%, 0.255);
+    color: black;
+    height: 10%;
+}
+footer div{
+    display: flex;
+    justify-content: flex-end;
+}
+footer div ul{
+    display: flex;
+    list-style-type: none;
+    padding: 25px 2.5%;
+}
+footer div .linkedin{
+    width: 50px;
+    height: 50px;
+    color: black;
+    padding: 2% 5%;
+    text-decoration: none;
+    cursor: pointer;
+}
+footer div .linkedin:hover{
+    transform: translateY(-.3rem);
+    color: white;
+}
+footer div .linkedin:active{
+    transform: translateY(.3rem);
+    color: lightblue;
+}
+
+footer div ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 25px;
+    margin-left: auto;
+    color: black;
+}
+footer div ul li:hover a{
+    transform: translateY(-.3rem);
+    color: white;
+}
+footer div ul li:active a{
+    transform: translateY(.3rem);
+    color: lightblue;
+}
+
+@keyframes slideLeft{
+    from{transform: translateX(300%)}
+}
