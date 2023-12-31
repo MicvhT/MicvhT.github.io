@@ -4,31 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "aboutMe.css">
-    <title>About Me</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8588677c14.js" crossorigin="anonymous"></script>
+    <title>About Me</title>
 </head>
 <body>
-    <header>
-        <h1 id = "nametag"><a class = "homepage" href = "index.html"> M.Thompson </a></h1>
-        <nav>
+
+    <header class = "header">
+
+        <h1 class = "logo"><a href = "index.html"> Thompson </a></h1>
+
+        <nav class = "navclass">
             <ul class = "navbar">
                 <li><a href = "aboutMe.html"> About Me </a></li>
                 <li><a href = "extras.html"> Extracurriculars </a></li>
                 <li><a href = "projects.html"> Projects </a></li>
+                <li><a href = "mailto: micah18thompson@gmail.com"> Contact </a></li>
             </ul>
         </nav>
-         <a href = "mailto: micah18thompson@gmail.com"><button class = "contactButton"> Contact </button></a>
+
+        <!-- Media Screen & Max-Width: 600px -->
+        <span id ="homePageSpan"><a href = "index.html"><i id = "homePage" class="fa-solid fa-house"></i></a></span>
+        <!-- Media Screen & Max-Width: 600px -->
+            
     </header>
-    <main>
+
+   <main>
+
         <section class = "aboutMeSection">
+
             <aside class = "logo">
                 <img src = "images/aboutMePageLogo.png" alt = "Bitmoji Image">
             </aside>
+
             <br>
             <br>
+
             <aside class = "aboutMe">
                 <h1> Micah Thompson </h1>
                 <br>
@@ -43,25 +56,30 @@
                 <br>
                 <h1> Skills Include </h1>
                 <br>
+
             <section class = "skillicons">
                 <img id = "htmlLogo" src = "images/htmlLogo.png" alt = "HTML Logo">
                 <img id = "cssLogo" src = "images/cssLogo.png" alt = "CSS Logo">
                 <img id = "cplusplus" src = "images/cplusplus.png" alt = "C++ Logo">
                 <img id = "jsLogo" src = "images/javascriptLogo.png" alt = "JavaScript Logo">
             </section>
+
             </aside>
+
         </section>
+
     </main>
-    <footer>
-        <div>
-            <ul>
-                <li><a href = "index.html"> Home Page</a></li>
-                <li><a href = "aboutMe.html"> About Me </a></li>
-                <li><a href = "extras.html"> Extracurriculars </a></li>
-                <li><a href = "projects.html"> Projects </a></li>
-            </ul>
-            <a class = "linkedin" target = "_blank" href = "https://www.linkedin.com/in/micah-thompson-4972a7298"><i class="fa-brands fa-linkedin"></i></a>
-       </div>
-    </footer>
+    
 </body>
+
+<footer>
+    
+    <div class = "footerContent">
+        <h1 id = "copyRight"> &copy; 2023 Micah Thompson </h1>
+        <a class = "linkedin" target = "_blank" href = "https://www.linkedin.com/in/micah-thompson-4972a7298"><i class="fa-brands fa-linkedin"></i></a>
+        <a class = "github" target = "_blank" href = " "><i class="fa-brands fa-github"></i></a>
+    </div>
+
+</footer>
+
 </html>

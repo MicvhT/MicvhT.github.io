@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap");
 *{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat, "Poppins", sans-serif;
 }
 body{
     background-repeat: no-repeat;
@@ -12,72 +13,80 @@ body{
     background-image: url(images/coolbackground.jpeg);
     margin: 0px;
 }
-header{
+.header{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-    margin: 0px;
-    border: 1px solid black;
-    background-color: hsla(162, 54%, 69%, 0.255);
-    box-shadow: 2px 5px 50px black;
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background-color: transparent;
+    padding: 20px 100px;
+    z-index: 100;
 }
-#nametag{
-    margin-right: auto;
-    font-weight: 700;
-    font-size: 30px;
-    cursor: pointer;
+.header .logo{
+    position: absolute;
+    display: inline-block;
+    margin-right: 75%;
 }
-h1 .homepage{
+.header .logo a{
     text-decoration: none;
-    color: black;
+    font-family: "Poppins";
+    font-weight: 600;
+    color: white;
+}
+.navclass{
+    position: absolute;
+    display: inline-block;
+    color: white;
 }
 .navbar{
+    position: relative;
     list-style-type: none;
+    margin-top: 3%;
 }
+
 .navbar li{
+    position: relative;
     display: inline-block;
-    padding: 0px 40px;
-    font-size: .9em;
+    margin-left: 40px;
     animation-name: slideLeft;
-    animation-duration: 2s;
+    animation-duration: .75s;
 }
 .navbar li a{
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-}
-.navbar li:hover a{
-    background-color: hsl(82, 39%, 43%);
     color: white;
-    border-radius: 10px;
-    padding: 20px 15px;
-}
-a .contactButton{
-    margin-left: 30px;
-    padding: 9px 25px;
-    color: black;
-    background-color: hsla(162, 54%, 69%, 0.255);
-    border-radius: 50px;
-    border: 2px solid black;
-    cursor: pointer;
     text-decoration: none;
-    animation-name: slideLeft;
-    animation-duration: 1.5s;
+    font-size: 14px;
+    font-family: none;
+    font-weight: 500;
 }
-a:hover .contactButton{
-    background-color: hsl(82, 39%, 53%);
-    color: white;
+.navbar li:hover{
     transform: translateY(-.3rem);
 }
-a:active .contactButton{
-    transform: translateY(.3rem);
+.navbar li a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: .5s;
 }
+.navbar li a:hover::before{
+    width: 100%;
+}
+
+
+/* End of Navbar */
+
 
 .container{
     display: flex;
     justify-content: flex-start;
-    margin-top: 3%;
+    margin-top: 10%;
     background-color: hsla(162, 54%, 69%, 0.714);
     box-shadow: 5px 5px 30px white;
     border: 1px solid black;
@@ -91,6 +100,15 @@ a:active .contactButton{
 .containter div{
     display: inline-block;
 }
+.container div img{
+    display: block;
+    width: 700px;
+    height: 300px;
+    border: 1px solid black;
+    margin-top: 4%;
+    margin-left: 2%;
+    border-radius: 50px;
+}
 .container #description{
     display: inline-block;
     margin-top: 12%;
@@ -100,7 +118,7 @@ a:active .contactButton{
 .container div h1{
     display: block;
     margin-top: 4%;
-    margin-left: 12.5%;
+    margin-left: 11%;
     border: .5px solid black;
     background-color: black;
     box-shadow: 5px 5px 10px white;
@@ -111,15 +129,6 @@ a:active .contactButton{
     text-decoration: none;
     color: white;
     cursor: pointer;
-}
-.container div img{
-    display: block;
-    width: 700px;
-    height: 300px;
-    border: 1px solid black;
-    margin-top: 4%;
-    margin-left: 2%;
-    border-radius: 50px;
 }
 .container2{
     display: flex;
@@ -142,57 +151,203 @@ a:active .contactButton{
 
 footer{
     display: block;
-    text-align: center;
-    border: .5px solid black;
+    justify-content: space-between;
     position: absolute;
-    width: 100%;
-    background-color: hsla(162, 54%, 69%, 0.255);
-    color: black;
+    margin-top: 5%;
+    left: 0px;
+    border: none;
+    box-shadow: 2px -2px 10px;
+    background-color: hsla(0, 0%, 67%, 0.308);
     height: 10%;
-    margin-top: 2%;
+    width: 100%;
 }
-footer div{
+footer .footerContent{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    border: none;
 }
-footer div ul{
-    display: flex;
-    list-style-type: none;
-    padding: 25px 2.5%;
-}
-footer div .linkedin{
-    width: 50px;
-    height: 50px;
-    color: black;
-    padding: 2% 5%;
-    text-decoration: none;
-    cursor: pointer;
-}
-footer div .linkedin:hover{
-    transform: translateY(-.3rem);
+footer #copyRight{
+    display: inline-block;
     color: white;
+    font-family: "Poppins";
+    font-size: 12px;
+    position: relative;
+    left: 4%;
+    opacity: 60%;
 }
-footer div .linkedin:active{
-    transform: translateY(.3rem);
-    color: lightblue;
+footer .linkedin{
+    display: inline-block;
+    color: white;
+    position: absolute;
+    right: 8%;
+}
+footer .linkedin:hover i{
+    transform: translateY(-.3rem);
+    box-shadow: 2px 2px 5px black;
+}
+footer .github{
+    display: inline-block;
+    color: white;
+    position: absolute;
+    right: 4%;
+}
+footer .github:hover i{
+    transform: translateY(-.3rem);
+    box-shadow: 2px 2px 5px black;
 }
 
-footer div ul li a{
-    display: inline-block;
-    text-decoration: none;
-    padding: 0px 25px;
-    margin-left: auto;
-    color: black;
-}
-footer div ul li:hover a{
-    transform: translateY(-.3rem);
-    color: white;
-}
-footer div ul li:active a{
-    transform: translateY(.3rem);
-    color: lightblue;
-}
+/* End of Footer */
+
 
 @keyframes slideLeft{
     from{transform: translateX(300%)}
+}
+
+/*This is for mobile only*/
+#homePage{
+    display: none;
+}
+/*This is for mobile only*/
+
+@media screen and (max-width: 600px){
+    .header{
+        display: flex;
+        justify-content: flex-end;
+        border: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 8%;
+        background-color: transparent;
+        padding: 10px 20px;
+        z-index: 100;
+    }
+    .header .logo{
+        display: none;
+    }
+    #homePage{
+        position: absolute;
+        display: inline-block;
+        top: 40%;
+        right: 90%;
+        color: white;
+        cursor: pointer;
+    }
+    #homePage{
+        position: absolute;
+        display: inline-block;
+        top: 40%;
+        right: 90%;
+        color: white;
+        cursor: pointer;
+    }
+    #homePageSpan a:hover #homePage{
+        transform: translateY(-.3rem);
+        box-shadow: 2px 2px 5px black;
+        background-color: transparent;
+    }
+
+    /* End of Navbar */
+
+
+    .container{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 14%;
+        background-color: hsla(162, 54%, 69%, 0.714);
+        box-shadow: 5px 5px 30px white;
+        border: 1px solid black;
+        border-radius: 50px;
+        text-align: center;
+        color: white;
+        height: 60vh;
+        width: 95%;
+        margin-left: 3%;
+    }
+    .containter div{
+        display: inline-block;
+    }
+    .container div img{
+        display: block;
+        width: 500px;
+        height: 225px;
+        border: 1px solid black;
+        position: absolute;
+        top: 18%;
+        left: 6.5%;
+        border-radius: 50px;
+    }
+    .container #description{
+        display: inline-block;
+        margin-top: 12%;
+        width: 90%;
+        position: absolute;
+        top: 46%;
+        right: 5%;
+    }
+    .container div h1{
+        display: block;
+        margin-top: 3%;
+        margin-left: 9.5%;
+        border: .5px solid black;
+        background-color: black;
+        box-shadow: 5px 5px 10px white;
+        border-radius: 50px;
+        width: 75vw;
+        position: absolute;
+    }
+    .container div h1 a{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* End of Container */
+
+
+    .container2{
+        display: flex;
+        justify-content: center;
+        margin-top: 4%;
+        background-color: hsla(162, 54%, 69%, 0.714);
+        box-shadow: 5px 5px 10px white;
+        border: 1px solid black;
+        border-radius: 50px;
+        text-align: center;
+        color: white;
+        height: 10vh;
+        width: 95vw;
+        position: absolute;
+        right: 1.75%;
+    }
+    .container2 div h1{
+        padding: 2%;
+    }
+
+    /* End of Container 2 */
+
+    footer{
+        display: block;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        border: none;
+        box-shadow: 2px -2px 10px;
+        background-color: hsla(0, 0%, 67%, 0.308);
+        height: 10%;
+        width: 100%;
+    }
+    footer .linkedin{
+        display: inline-block;
+        color: white;
+        position: absolute;
+        right: 12%;
+    }
+
+
 }

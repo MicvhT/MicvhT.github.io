@@ -11,24 +11,32 @@
     <script src="https://kit.fontawesome.com/8588677c14.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1 id = "nametag"><a class = "homepage" href = "index.html"> M.Thompson </a></h1>
-        <nav>
+    <header class = "header">
+
+        <h1 class = "logo"><a href = "index.html"> Thompson </a></h1>
+
+        <nav class = "navclass">
             <ul class = "navbar">
                 <li><a href = "aboutMe.html"> About Me </a></li>
                 <li><a href = "extras.html"> Extracurriculars </a></li>
                 <li><a href = "projects.html"> Projects </a></li>
+                <li><a href = "mailto: micah18thompson@gmail.com"> Contact </a></li>
             </ul>
         </nav>
-         <a href = "mailto: micah18thompson@gmail.com"><button class = "contactButton"> Contact </button></a>
+
+        <!-- Media Screen & Max-Width: 600px -->
+        <span id ="homePageSpan"><a href = "index.html"><i id = "homePage" class="fa-solid fa-house"></i></a></span>
+        <!-- Media Screen & Max-Width: 600px -->
+            
     </header>
+
     <main>
         <section class = "container">
             <div>
                 <h1><a href = "index.html"> Portfolio Website </a></h1>
                 <img src = 'images/projectone.png' alt = "Website Project">
             </div>
-            <div id = "description"> <p> My first project, a portfolio website including methods to contsact me, basic information about me, my extracurriculars,  and a preview of my projects. Simple format of the pages were conducted using HTML, while stylying each page with CSS </p></div>
+            <div id = "description"> <p> My first project, a portfolio website including methods to contact me, basic information about me, my extracurriculars,  and a preview of my projects. Simple format of the pages were conducted using HTML, while stylying each page with CSS </p></div>
         </section>
         <section class = "container2">
             <div>
@@ -37,14 +45,15 @@
         </section>
     </main>
 </body>
+
 <footer>
-    <div>
-        <ul>
-            <li><a href = "index.html"> Home Page</a></li>
-            <li><a href = "aboutMe.html"> About Me </a></li>
-            <li><a href = "extras.html"> Extracurriculars </a></li>
-            <li><a href = "projects.html"> Projects </a></li>
-        </ul>
-        <a class = "linkedin" target = "_blank" href = "https://www.linkedin.com/in/micah-thompson-4972a7298"><i class="fa-brands fa-linkedin"></i></a>        </div>
+    
+    <div class = "footerContent">
+        <h1 id = "copyRight"> &copy; 2023 Micah Thompson </h1>
+        <a class = "linkedin" target = "_blank" href = "https://www.linkedin.com/in/micah-thompson-4972a7298"><i class="fa-brands fa-linkedin"></i></a>
+        <a class = "github" target = "_blank" href = " "><i class="fa-brands fa-github"></i></a>
+    </div>
+
 </footer>
+
 </html>
