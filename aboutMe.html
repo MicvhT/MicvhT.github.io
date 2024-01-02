@@ -3,83 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "aboutMe.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <link rel = "stylesheet" href = "aboutMeStyles.css">
     <script src="https://kit.fontawesome.com/8588677c14.js" crossorigin="anonymous"></script>
-    <title>About Me</title>
+    <title>About Micah</title>
 </head>
 <body>
-
-    <header class = "header">
-
-        <h1 class = "logo"><a href = "index.html"> Thompson </a></h1>
-
-        <nav class = "navclass">
-            <ul class = "navbar">
-                <li><a href = "aboutMe.html"> About Me </a></li>
-                <li><a href = "extras.html"> Extracurriculars </a></li>
-                <li><a href = "projects.html"> Projects </a></li>
-                <li><a href = "mailto: micah18thompson@gmail.com"> Contact </a></li>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a href="/" id="navbarLogo">Micah</a>
+            <div class="navbarToggle" id="mobileMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbarMenu">
+                <li class="navbarItem"><a href="index.html" class="navbarLinks">
+                    Home
+                </a></li>
+                <li class="navbarItem"><a href="aboutMe.html" class="navbarLinks">
+                    About Me
+                </a></li>
+                <li class="navbarItem"><a href="endeavors.html" class="navbarLinks">
+                    Endeavors
+                </a></li>
+                <li class="navbarContact"><a href="" class="button">
+                    Contact
+                </a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
 
-        <!-- Media Screen & Max-Width: 600px -->
-        <span id ="homePageSpan"><a href = "index.html"><i id = "homePage" class="fa-solid fa-house"></i></a></span>
-        <!-- Media Screen & Max-Width: 600px -->
-            
-    </header>
-
-   <main>
-
-        <section class = "aboutMeSection">
-
-            <aside class = "logo">
-                <img src = "images/aboutMePageLogo.png" alt = "Bitmoji Image">
-            </aside>
-
-            <br>
-            <br>
-
-            <aside class = "aboutMe">
-                <h1> Micah Thompson </h1>
-                <br>
-                <h1> Computer Science Student</h1>
-                <br>
-                <p> Rising junior at Texas State University studying Computer Science with a minor in Mathematics. Passionate about discovering all avenues of the Computer Science field. Best described to be result-oriented, self-motivated, adaptable, great communicator, and definitively a quick learner.
-                </p>
-                <br>
-                <br>
-                <a class = "button" href = "mailto: micah18thompson@gmail.com"><button> Contact Me </button></a>
-                <br>
-                <br>
-                <h1> Skills Include </h1>
-                <br>
-
-            <section class = "skillicons">
-                <img id = "htmlLogo" src = "images/htmlLogo.png" alt = "HTML Logo">
-                <img id = "cssLogo" src = "images/cssLogo.png" alt = "CSS Logo">
-                <img id = "cplusplus" src = "images/cplusplus.png" alt = "C++ Logo">
-                <img id = "jsLogo" src = "images/javascriptLogo.png" alt = "JavaScript Logo">
-            </section>
-
-            </aside>
-
-        </section>
-
-    </main>
-    
-</body>
-
-<footer>
-    
-    <div class = "footerContent">
-        <h1 id = "copyRight"> &copy; 2023 Micah Thompson </h1>
-        <a class = "linkedin" target = "_blank" href = "https://www.linkedin.com/in/micah-thompson-4972a7298"><i class="fa-brands fa-linkedin"></i></a>
-        <a class = "github" target = "_blank" href = " "><i class="fa-brands fa-github"></i></a>
+    <!-- About Me Section -->
+    <div class="main">
+        <div class="mainContainer">
+            <div class="mainContent">
+                <img src="images/profilePic.svg" alt="" id="mainImg">
+                <h1>Micah Thompson</h1>
+                <h2>Computer Science Student</h2>
+                <p> Rising junior at Texas State University studying Computer Science with a completed minor in Mathematics. Passionate about discovering all avenues of the Computer Science field. Best described to be result-oriented, self-motivated, adaptable, reliable,
+                    a great communicator, and definitively a quick learner. Additionally, a US Citizen open to relocation and new journeys. Checkout my LinkedIn for experience/employment updates, and my GitHub for files of code! </p>
+                <div class="skills">
+                    <h1>Technical Skills Include:</h1>
+                    <div class="skillIcons">
+                        <img src="images/cplusplus.png" alt="" class="oneSkill">
+                        <img src="images/htmlLogo.png" alt="" class="oneSkill">
+                        <img src="images/cssLogo.png" alt="" class="oneSkill">
+                        <img src="images/javascriptLogo.png" alt="" class="oneSkill">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-</footer>
+    <!-- Footer Section -->
 
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="footerContent">
+                    <h1> &copy; 2024 Micah Thompson </h1>
+                    <div class="footerIcons">
+                        <a target = "_blank" href="https://www.linkedin.com/in/micah-thompson-4972a7298"><i id = "linkedin" class="fa-brands fa-linkedin"></i></a>
+                        <a target = "_blank" href=""><i id = "github" class="fa-brands fa-square-github"></i></a>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="indexScripts.js"></script>
+</body>
 </html>

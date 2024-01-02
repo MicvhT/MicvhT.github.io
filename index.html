@@ -3,66 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins" rel="stylesheet">
+    <link rel = "stylesheet" href = indexStyles.css>
     <script src="https://kit.fontawesome.com/8588677c14.js" crossorigin="anonymous"></script>
-    <title>Portfolio</title>
+    <title>Portfolio Thompson</title>
 </head>
-
 <body>
-    
-    <header class = "header">
-
-        <h1 class = "logo"><a href = "index.html"> Thompson </a></h1>
-
-        <nav class = "navclass">
-            <ul class = "navbar">
-                <li><a href = "aboutMe.html"> About Me </a></li>
-                <li><a href = "extras.html"> Extracurriculars </a></li>
-                <li><a href = "projects.html"> Projects </a></li>
-                <li><a href = "mailto: micah18thompson@gmail.com"> Contact </a></li>
-            </ul>
-        </nav>
-
-        <!-- Media Screen & Max-Width: 600px -->
-        <span id ="homePageSpan"><a href = "index.html"><i id = "homePage" class="fa-solid fa-house"></i></a></span>
-        <!-- Media Screen & Max-Width: 600px -->
-            
-    </header>
-
-    <main>
-
-        <section class = "section">
-        <!-- Place In Div If Adding More Conent -->
-            <aside>
-                <h1 class = "greeting"> Hi There, </h1>
-                <h1 class = "myName">I am <span class = "name">Micah</span></h1>
-                <br>
-                <h1> Computer Science Student </h1>
-                <br>
-                <a href = "mailto: micah18thompson@gmail.com"><button>Hire Me</button></a>
-            </aside>
-
-            <div class = "sectionContent">
-                <img src = "images/laptop-wave.png" class = "laptopWave" alt = "Greeting Image">
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a href="/" id="navbarLogo">Micah</a>
+            <div class="navbarToggle" id="mobileMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+            <ul class="navbarMenu">
+                <li class="navbarItem"><a href="index.html" class="navbarLinks">
+                    Home
+                </a></li>
+                <li class="navbarItem"><a href="aboutMe.html" class="navbarLinks">
+                    About Me
+                </a></li>
+                <li class="navbarItem"><a href="endeavors.html" class="navbarLinks">
+                    Endeavors
+                </a></li>
+                <li class="navbarContact"><a href="" class="button">
+                    Contact
+                </a></li>
+            </ul>
+        </div>
+    </nav>
 
-        </section>
-        
-    </main>
-
-</body>
-
-<footer>
-    
-    <div class = "footerContent">
-        <h1 id = "copyRight"> &copy; 2023 Micah Thompson </h1>
-        <a class = "linkedin" target = "_blank" href = "https://www.linkedin.com/in/micah-thompson-4972a7298"><i class="fa-brands fa-linkedin"></i></a>
-        <a class = "github" target = "_blank" href = " "><i class="fa-brands fa-github"></i></a>
+    <!-- Main Section -->
+    <div class="main">
+        <div class="mainContainer">
+            <div class="mainContent">
+                <h1>Micah Thompson</h1>
+                <h2> Computer Science Student</h2>
+                <button class="mainButton"><a href="mailto: micah18thompson@gmail.com"> HIRE ME </a></button>
+            </div>
+            <div class="mainImgContainer"><img src="images/computer.svg" alt="Computer Picture" id = "mainImg"></div>
+        </div>
     </div>
 
-</footer>
+    <!-- Footer Section -->
 
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="footerContent">
+                    <h1> &copy; 2024 Micah Thompson </h1>
+                    <div class="footerIcons">
+                        <a target = "_blank" href="https://www.linkedin.com/in/micah-thompson-4972a7298"><i id = "linkedin" class="fa-brands fa-linkedin"></i></a>
+                        <a target = "_blank" href=""><i id = "github" class="fa-brands fa-square-github"></i></a>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="indexScripts.js"></script>
+</body>
 </html>
