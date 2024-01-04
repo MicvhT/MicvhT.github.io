@@ -275,7 +275,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 25%;
+    padding: 0 25%;
 }
 
 .oneSkill{
@@ -288,6 +288,38 @@
 
 .oneSkill:hover{
     transform: translateY(-.6rem);
+}
+
+@media screen and (max-width: 960px){
+
+    .mainContent h1{
+        margin-top: 5%;
+    }
+    
+    .mainContent h2{
+        margin-top: 3%;
+    }
+
+    .mainContent p{
+        margin-top: 3%;
+        width: 80%;   
+    }
+
+    .skills h1{
+        color: red;
+        font-size: 1.5rem;
+        margin-top: 5%;
+    }
+
+    .skillIcons{
+        padding: 0 5%;
+    }
+
+    .oneSkill{
+        margin-top: 8%;;
+    }
+
+
 }
 
 /* Footer Section */

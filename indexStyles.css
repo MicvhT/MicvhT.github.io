@@ -291,6 +291,35 @@
     width: 80%;
 }
 
+@media screen and (max-width: 960px){
+
+    .mainContainer{
+        grid-template-columns: auto;
+        padding: 0 0;
+    }
+
+    .mainContent{
+        display: grid;
+        grid-template-columns: auto;
+        width: 90%;
+        height: 80%;
+        margin-top: 5%;
+        padding: 0 2%;
+        justify-self: center;
+    }
+
+    .mainContent h1{
+        text-align: center;
+    }
+    
+    .mainContent h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+
+}
+
 
 /* Footer Section */
 
