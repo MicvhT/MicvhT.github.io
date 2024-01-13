@@ -284,6 +284,7 @@
     position: relative;
     margin: auto;
     margin-top: 5%;
+    cursor: pointer;
 }
 
 .oneSkill:hover{

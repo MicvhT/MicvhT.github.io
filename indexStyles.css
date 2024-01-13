@@ -389,4 +389,132 @@
     transform: translateY(.3rem);
 }
 
+/* Language Section */ 
+
+.languageContainer{
+    /* border: 1px solid blue; */
+    display: flex;
+    width: 50%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.buttonContent{
+    display: flex;
+    position: absolute;
+    bottom: 100000px;
+    /* border: 1px solid purple; */
+    width: 100%;
+    height: 30vh;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    background: #141414;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    opacity: 0;
+}
+
+.buttonContent.active{
+    bottom: 100%;
+    z-index: 999;
+    opacity: 1;
+}
+
+
+.buttonContainer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.changeLanguageButton{
+    font-size: 1rem;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: black;
+    width: 20%;
+    height: 5px;
+    border: none;
+    margin-bottom: 5%;
+    opacity: 25%;
+    border-radius: 20px;
+}
+
+.changeLanguageButton:hover{
+    opacity: 1;
+    transform: translateY(-.3rem);
+    box-shadow: 0 0 50px white;
+    transition: all 0.1s ease;
+}
+
+.changeLanguageButton:active{
+    opacity: 1;
+    transform: translateY(.3rem);
+    box-shadow: 0 0 50px white;
+    transition: all 0.1s ease;
+}
+
+.languages{
+    display: grid;
+    grid-template-columns: auto;
+    list-style: none;
+    border-right: 1px solid #00BFA6;
+    border-left: 1px solid #00BFA6;
+    border-top: 1px solid #00BFA6;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.languageItem{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.languageItem:hover{
+    transform: translateY(-.3rem);
+    text-shadow: 0 0 30px white;
+}
+
+#english::before{
+    content: '🇺🇸 ';
+}
+#spanish::before{
+    content: '🇪🇸 ';
+}
+#french::before{
+    content: '🇫🇷 ';
+}
+#german::before{
+    content: '🇩🇪 ';
+}
+
+@media screen and (max-width: 960px){
+    
+    .changeLanguageButton{
+        width: 40%;
+    }
+
+}
+
+
+
 
